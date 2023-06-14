@@ -20,4 +20,8 @@ code {
   h2 {
     font-size: 18px !important;
   }
+
+  .logos li {
+    flex: 0 0 32% !important;
+  }
 }
