@@ -1,0 +1,296 @@
+@media (max-width: 1550px) {
+  .aboutWrap {
+    padding: 25px;
+  }
+  .about-desc {
+    margin-bottom: 40px;
+  }
+  .left-sec-title {
+    font-size: 18px;
+  }
+
+  .profile-pg p,
+  .profile-pg li {
+    font-size: 14px;
+  }
+
+  .profile-pg .rightSide h1 .underline {
+    background-image: linear-gradient(
+      transparent calc(100% - 22px),
+      #ffda30 10px
+    );
+  }
+
+  .main-title h1 {
+    font-size: 50px;
+  }
+
+  .main-title h2 {
+    font-size: 25px;
+  }
+
+  .right-sec-title {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 60px;
+  }
+
+  .profile-pg .rightSide {
+    padding: 60px 40px;
+  }
+
+  .profile-pg p,
+  .profile-pg li {
+    font-size: 14px;
+  }
+}
+
+.leftSide {
+  background: #1f1f1f;
+  padding: 0 !important;
+  color: #fff;
+}
+
+.rightSide {
+  padding: 60px 40px;
+}
+
+.aboutWrap {
+  padding: 40px;
+}
+
+.about-desc {
+  margin-bottom: 60px;
+}
+
+.about-desc {
+  margin-bottom: 60px;
+}
+
+.quill-readonly .ql-container.ql-snow {
+  border: none;
+}
+.ql-container.ql-snow {
+  border: 1px solid #ccc;
+}
+.quill-readonly .ql-container {
+  font-family: Montserrat, sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px;
+  line-height: 17px;
+}
+.quill pre {
+  color: inherit !important;
+}
+.ql-snow {
+  box-sizing: border-box;
+}
+.ql-container {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+.quill-readonly .ql-editor {
+  padding: 0;
+}
+
+.ql-snow * {
+  box-sizing: border-box;
+}
+.ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+li,
+ul {
+  list-style-type: none;
+}
+
+.about-desc .btnsBox li {
+  background: #fff8d6;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #000;
+  margin-right: 8px;
+}
+
+.about-desc ul li {
+  margin-bottom: 8px;
+}
+
+.skillList {
+  margin-bottom: 60px;
+}
+
+.skillList ul li {
+  border: solid 1px #4c4c4c;
+  padding: 11px 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-pg p,
+.profile-pg li {
+  font-size: 15px;
+  line-height: 1.5;
+}
+ul li {
+  list-style-type: none;
+}
+ul li {
+  list-style-type: none;
+}
+li,
+ul {
+  list-style-type: none;
+}
+
+.left-sec-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: solid 2px #4c4c4c;
+}
+
+.interests {
+  margin-bottom: 60px;
+}
+
+.interests .intBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.underline {
+  background-image: linear-gradient(
+    transparent calc(100% - 35px),
+    #ffda30 10px
+  );
+  padding: 0 20px;
+}
+
+.main-title h1 {
+  font-size: 60px;
+}
+
+.main-title h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 22px;
+}
+
+.right-sec-title {
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-bottom: 15px;
+  margin: 80px 0 25px 0;
+  border-bottom: solid 1px #ccc;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.profile-pg .rightSide {
+  padding: 100px 60px;
+  background: #fff;
+}
+
+.major-projects .proBox {
+  display: flex;
+}
+
+.info-no-ul.exp {
+  margin-top: -5px;
+  padding: 0;
+  color: #888888;
+}
+
+.info-no-ul {
+  color: #010101;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.profile-pg .rightSide p {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: flex-start;
+  margin: 0 -15px;
+}
+
+.profile-pg .rightSide ul {
+  padding-left: 17px;
+  margin-bottom: 20px;
+}
+
+.logos li {
+  flex: 0 0 20%;
+  position: relative;
+  text-align: center;
+  width: 90px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  color: #888;
+  padding: 0 15px;
+}
+
+.logos li img {
+  max-width: 100%;
+  margin: 0 auto 10px auto;
+  height: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.logos li p {
+  word-break: break-word;
+}
+
+.ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+
+.rightSide ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+  font-weight: 545;
+}
+
+.logos li {
+  list-style-type: none !important;
+  margin-bottom: 10px;
+  font-weight: 545;
+}
