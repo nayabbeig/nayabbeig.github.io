@@ -182,6 +182,9 @@ const Education = () => (
 
 const Contacts = () => (
   <div className="mb-2 mb-5">
+    <div className="d-block d-md-none mb-5">
+      <Title />
+    </div>
     <h4 class="left-sec-title" id="contacts">
       Contacts
     </h4>
@@ -224,7 +227,7 @@ const Contacts = () => (
 );
 
 const NavBar = () => (
-  <div className="my-5 d-flex justify-content-center">
+  <div className="my-5 d-none justify-content-center d-md-flex flex-wrap">
     {[
       { label: "About", url: "about" },
       { label: "Contacts", url: "contacts" },
@@ -234,7 +237,11 @@ const NavBar = () => (
       { label: "Languages", url: "languages" },
       { label: "Interests", url: "interests" },
     ].map(({ label, url }) => (
-      <Button variant="outline-warning mx-2" onClick={() => scrollTo(url)}>
+      <Button
+        variant="outline-warning m-1"
+        onClick={() => scrollTo(url)}
+        size="sm"
+      >
         {label}
       </Button>
     ))}
@@ -245,22 +252,32 @@ const ResumePage = () => {
   return (
     <Container fluid>
       <Row>
-        <Col sm={4} className="leftSide">
+        <Col sm={12} md={4} className="leftSide">
           <ProfileImage />
           <div class="aboutWrap">
             <Contacts />
             <AboutAndExperience />
-            <Languages />
-            <Interests />
+            <div className="d-none d-md-block">
+              <Languages />
+              <Interests />
+            </div>
           </div>
         </Col>
         <Col sm={8} className="rightSide px-5">
           <div class="main-title">
-            <Title />
+            <div className="d-none d-md-block">
+              <Title />
+            </div>
             <NavBar />
             <ProfessionalExperience />
             <Skills />
             <Education />
+          </div>
+        </Col>
+        <Col sm={12} md={4} className="leftSide d-block d-md-none">
+          <div class="aboutWrap">
+            <Languages />
+            <Interests />
           </div>
         </Col>
       </Row>

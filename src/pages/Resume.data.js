@@ -25,8 +25,7 @@ const data = {
   phone: "7223944224",
   location: "Pune",
   profilePicture,
-  designation:
-    "Full Stack Developer | Frontend Engineer | UI Engineer | Application Engineer | Senior Development Engineer",
+  designation: "Frontend Engineer | UI Engineer | Full Stack Developer",
   about:
     "I am a Front End developer with 4 years of experience in React Js, JavaScript, HTML/CSS, and Node Js. I have worked in various projects which allowed me to gain expertise in developing user interfaces, optimizing the performance of applications, and ensuring cross-browser compatibility. My technical skills have enabled me to develop web applications and services with an eye towards scalability, performance, and reliability. I have a passion for developing efficient and effective user experiences and am always looking for challenges and opportunities to improve my skills.",
   skills: ["English", "Hindi", "Urdu"],
