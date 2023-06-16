@@ -4,18 +4,20 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import "./Resume.page.css";
 import ResumeData from "./Resume.data";
 import { MdCall, MdLocationOn, MdOutlineMail } from "react-icons/md";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaArrowUp } from "react-icons/fa";
 import $ from "jquery";
 
-const scrollTo = (id) => {
+const scrollTo = (id, onlyScroll) => {
   $(`#${id}`)[0].scrollIntoView({ behavior: "smooth", block: "start" });
-  $(`#${id}`)
-    .addClass("bg-warning")
-    .fadeOut(300)
-    .fadeIn(300)
-    .fadeOut(300)
-    .fadeIn(300);
-  setTimeout(() => $(`#${id}`).removeClass("bg-warning"), 2000);
+  if (!onlyScroll) {
+    $(`#${id}`)
+      .addClass("bg-warning")
+      .fadeOut(300)
+      .fadeIn(300)
+      .fadeOut(300)
+      .fadeIn(300);
+    setTimeout(() => $(`#${id}`).removeClass("bg-warning"), 2000);
+  }
 };
 
 const AboutSection = () => (
@@ -77,7 +79,7 @@ const Interests = () => (
 );
 
 const ProfileImage = () => (
-  <div class="profilePhoto">
+  <div class="profilePhoto" id="profile">
     <figure>
       <img className="w-100" src={ResumeData.profilePicture} alt="profile" />
     </figure>
@@ -280,6 +282,16 @@ const ResumePage = () => {
             <Interests />
           </div>
         </Col>
+        <div className="fixed-bottom d-flex justify-content-end mb-3 mr-2">
+          <Button
+            variant="outline-warning"
+            size="small"
+            className="circle"
+            onClick={() => scrollTo("profile", true)}
+          >
+            <FaArrowUp />
+          </Button>
+        </div>
       </Row>
     </Container>
   );
